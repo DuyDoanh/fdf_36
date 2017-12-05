@@ -4,6 +4,7 @@ class User < ApplicationRecord
   has_many :orders, dependent: :destroy
   has_many :ratings, dependent: :destroy
   has_many :comments, dependent: :destroy
+  belongs_to :permission
 
   before_save{email.downcase!}
   validates :name, presence: true, length: {maximum: Settings.maximum.length_name}

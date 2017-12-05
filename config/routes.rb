@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   get "/signin", to: "sessions#new"
   post "/signin", to: "sessions#create"
   get "/signup", to: "users#new"
+  get "/detail", to: "static_pages#detail"
+  get "/product", to: "static_pages#product"
   resources :static_pages
   resources :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
 end
+
