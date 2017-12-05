@@ -1,3 +1,3 @@
 class Permission < ApplicationRecord
-  has_many :user
+  has_many :users, dependent: :destroy
 end

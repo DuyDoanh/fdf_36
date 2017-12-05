@@ -87,6 +87,7 @@ en:
       help: "Help Us"
       contact: "Contact"
       cart: "Cart"
+      search: "Search!"
     footer:
       contact: "Contact"
       name: "Name : "

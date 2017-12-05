@@ -1,0 +1,12 @@
+<%= form_tag @products do |f| %>
+  <div class="input-group">
+    <%= f.text_field_tag :term, params["term"],
+      id: "filter-autocomplete-search" %>
+  </div>
+  <div class="input-group-btn">
+    <i class="btn btn-default search">
+      <%= f.submit_tag "search" %>
+      <span class="glyphicon glyphicon-search"></span>
+    </i>
+  </div>
+<% end %>

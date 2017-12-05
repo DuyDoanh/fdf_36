@@ -11,7 +11,7 @@
     <div class="col-sm-9 pull-right">
       <h3 class="box-title"><%= t ".previous" %></h3>
       <ol>
-        <%= render partial: "product", collection: @products %>
+        <%= render partial: "searches", collection: @products %>
       </ol>
       <%= will_paginate @products %>
     </div>
